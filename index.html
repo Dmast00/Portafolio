@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Document</title>
 </head>
-<body onload="LoadingText()">
+<body onload="LoadingText(),TyperAnimation()">
     <div id="LoadingContainer" class="loading__container" >
         <div class="loading__text">
             <p class="percentage">
@@ -33,9 +33,17 @@
                 close
             </span>
         </div>
+        <div class="menucontainer__options">
+            <ul>
+                <li>Contact me</li>
+            </ul>
+        </div>
     </div>
-    <div class="container">
-        
+    <div class="main__container">
+        <div class="title__container">
+            <h2>Obed Hinojosa</h2>
+            <small id="title"></small>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

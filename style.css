@@ -73,7 +73,41 @@ body{
     margin: 15px 15px 15px;
     cursor: pointer;
 }
-
+.menucontainer__options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+    cursor: pointer;
+}
+.menucontainer__options>ul>li{
+    list-style: none;
+    font-size: 35px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.main__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+.title__container{
+    font-size: 40px;
+    width: 75%;
+    color: #051441;
+}
+.title__container>small{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: -40px;
+    
+}
 @keyframes LoadingPageAnimation{
     0%{
         transform: translateY(0px);
