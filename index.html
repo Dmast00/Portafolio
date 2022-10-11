@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Document</title>
 </head>
 <body onload="LoadingText()">
     <div id="LoadingContainer" class="loading__container" >
         <div class="loading__text">
             <p class="percentage">
-                <h3 id="loadingPercentage" class="loading__percentage">
-
-                </h3>
+                <h3 id="loadingPercentage" class="loading__percentage"></h3>
             </p>
         </div>
     </div>
-    <header></header>
+    <header>
+        <nav class="nav__container" onclick="ShowMenuContainer()">
+            <ul class="ul__container">
+                <li class="li__item">
+                    <span class="material-symbols-outlined">
+                    menu
+                    </span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="MenuContainer" class="hide__menu" >
+        <div class="close__icon">
+            <span class="material-symbols-outlined" onclick="HideMenuContainer()">
+                close
+            </span>
+        </div>
+    </div>
     <div class="container">
-        <h2>hola
-
-        </h2>
+        
     </div>
     <script src="script.js"></script>
 </body>

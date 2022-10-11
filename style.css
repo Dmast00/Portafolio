@@ -6,7 +6,7 @@ body{
 }
 .loading__container{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     
     z-index: 1000;
     
@@ -30,8 +30,48 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    z-index: 10;
     position: absolute;
+}
+.li__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 0 15px;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+  
+}
+.show__menu{
+    animation:1s ShowMenu ease-in forwards;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    margin: 0px;
+    padding: opx;
+    top: 0px;
+    position: absolute;
+    
+}
+.hide__menu{
+    animation:2s HideMenu ease-in forwards;
+    display: none;
+}
+.close__icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 15px 15px 15px;
+    cursor: pointer;
 }
 
 @keyframes LoadingPageAnimation{
@@ -40,5 +80,25 @@ body{
     }
     100%{
         transform: translateY(-1000px);
+    }
+}
+
+@keyframes ShowMenu{
+    0%{
+        background-color: white;
+        opacity: 0;
+    }
+    100%{
+        opacity: 90;
+        background-color: #596157;
+    }
+}
+@keyframes HideMenu{
+    0%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+        display: none;
     }
 }
