@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+body{
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.loading__container{
+    width: 100vw;
+    height: 100vh;
+    
+    z-index: 1000;
+    
+    background-color: #051441;
+    position: absolute;
+    
+    animation:3s LoadingPageAnimation cubic-bezier(0.19, 0.11, 0.41, 0.93) forwards;
+}
+.loading__text{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   top: 30%;
+   position: relative;
+
+}
+.loading__percentage{
+    color: white;
+    font-size: 75px;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    z-index: 10;
+    position: absolute;
+}
+
+@keyframes LoadingPageAnimation{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-1000px);
+    }
+}
