@@ -1,7 +1,7 @@
 let LoadingContainer = document.getElementById('loadingPercentage');
 let MenuContainer = document.getElementById('MenuContainer');
 let title = document.getElementById('title');
-var string = 'Software and Web Developer.'
+var string = 'Software & Web Developer.'
 let array = string.split("")
 let timer;
 

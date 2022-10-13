@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+:root{
+    --loadingPageAnimation : 3s;
+    --showMenuAnimation : 1s;
+    --hideMenuAnimation : 2s;
+}
 body{
     margin: 0px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -13,7 +18,7 @@ body{
     background-color: #051441;
     position: absolute;
     
-    animation:3s LoadingPageAnimation cubic-bezier(0.19, 0.11, 0.41, 0.93) forwards;
+    animation:var(--loadingPageAnimation) LoadingPageAnimation cubic-bezier(0.19, 0.11, 0.41, 0.93) forwards;
 }
 .loading__text{
    display: flex;
@@ -52,7 +57,7 @@ body{
   
 }
 .show__menu{
-    animation:1s ShowMenu ease-in forwards;
+    animation:var(--showMenuAnimation) ShowMenu ease-in forwards;
     width: 100vw;
     height: 100vh;
     z-index: 1000;
@@ -63,7 +68,7 @@ body{
     
 }
 .hide__menu{
-    animation:2s HideMenu ease-in forwards;
+    animation:var(--hideMenuAnimation) HideMenu ease-in forwards;
     display: none;
 }
 .close__icon{
@@ -89,17 +94,28 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .main__container{
+    
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    
+}
+
+.container__titles{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 200px;
 }
 .title__container{
     font-size: 40px;
     width: 75%;
     color: #051441;
+    animation: 2s BounceAnimation ease-out 1s ;
+}
+.title__name{
+    display: flex;
+    flex-direction: row;
 }
 .title__container>small{
     margin: 0px;
@@ -107,6 +123,12 @@ body{
     position: relative;
     top: -40px;
     
+}
+.personal__projects__container{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    animation: 2s BounceAnimation ease-out 600ms ;
 }
 @keyframes LoadingPageAnimation{
     0%{
@@ -134,5 +156,15 @@ body{
     100%{
         opacity: 0;
         display: none;
+    }
+}
+@keyframes BounceAnimation{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
