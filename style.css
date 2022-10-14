@@ -11,7 +11,8 @@ body{
 }
 section{
     margin: 0px;
-    /* width: 100%; */
+    height: 100%;
+    width: 100%;
     padding: 0px;
     
 }
@@ -110,7 +111,7 @@ section{
     color: white
 }
 .main__container{
-    position: absolute;
+    
 }
 
 .container__titles{
@@ -118,7 +119,6 @@ section{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
 }
 .title__container{
     font-size: 40px;
@@ -139,7 +139,7 @@ section{
     top: -40px;   
 }
 .ilustration__container{
-    width: 100%;
+    width: 55%;
     position: relative;
     left:45vw ;
     animation: 2s BounceAnimation ease-out 600ms ;
