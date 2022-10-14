@@ -110,9 +110,6 @@ section{
     text-decoration: none;
     color: white
 }
-.main__container{
-    
-}
 
 .container__titles{
     display: flex;
@@ -146,8 +143,24 @@ section{
 }
 .projects__section{
     position: relative;
+    margin-top: 5vh;
 }
+.projects__title{
+    text-align: center;
+    font-size: 20px;
+}
+.projects__container{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 
+}
+.projec__card1{
+    width: 25vw;
+    height: 30vh;
+}
 
 
 @keyframes LoadingPageAnimation{
