@@ -9,6 +9,10 @@ body{
     margin: 0px;
     font-family: 'Source Sans Pro', sans-serif;
 }
+.container{
+    width: 100%;
+    height: 100%;
+}
 .loading__container{
     width: 100vw;
     height: 100%;
@@ -93,44 +97,59 @@ body{
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+.contactme__a{
+    text-decoration: none;
+    color: white
+}
 .main__container{
-    
-    position: absolute;
-    top: 20vh;
-    left: 20vw;
-    
+    width: 90%;
+    height: 60vh;   
+    margin: 0px;
+    padding: 0px;
+    display: inline;
 }
 
 .container__titles{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    position: absolute;
 }
 .title__container{
     font-size: 40px;
-    width: 75%;
+    position: absolute;
+    left: 15vw;
     color: #051441;
-    animation: 2s BounceAnimation ease-out 1s ;
+    animation: 2s BounceAnimation ease-out 800ms ;
 }
 .title__name{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-.title__container>small{
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    top: -40px;
+display: inline;
+
     
 }
-.personal__projects__container{
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    animation: 2s BounceAnimation ease-out 600ms ;
+.title__prof{
+    width: 25vw;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
 }
+
+.title__container>small{
+    top: -40px;
+
+    
+}
+.ilustration__container{
+    width: 100%;
+    position: relative;
+    left:45vw ;
+}
+
+
+
+
+
 @keyframes LoadingPageAnimation{
     0%{
         transform: translateY(0px);
