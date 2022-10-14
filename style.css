@@ -166,8 +166,8 @@ display: inline;
         opacity: 0;
     }
     100%{
-        opacity: 90;
-        background-color: #596157;
+        opacity: 0.980;
+        background-color: #7b854d;
     }
 }
 @keyframes HideMenu{
