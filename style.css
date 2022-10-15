@@ -5,13 +5,17 @@
     --showMenuAnimation : 1s;
     --hideMenuAnimation : 2s;
 }
+html{
+    overflow-x:hidden;
+}
 body{
     margin: 0px;
     font-family: 'Source Sans Pro', sans-serif;
+    
 }
 section{
     margin: 0px;
-    height: 100%;
+    
     width: 100%;
     padding: 0px;
     
@@ -111,6 +115,10 @@ section{
     color: white
 }
 
+.main__container{
+    height: 100vh;
+}
+
 .container__titles{
     display: flex;
     flex-direction: row;
@@ -155,10 +163,13 @@ section{
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    width: 100%;
 
 }
 .projec__card1{
+    text-align: center;
     width: 25vw;
+    height: 30vh;
 
 }
 
